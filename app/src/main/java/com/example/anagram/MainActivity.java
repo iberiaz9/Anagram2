@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		lines = line.split("\n");
 		max = lines.length;
 		
-		mTextView.setText("Press Start for anagram puzzle!");
+		mTextView.setText("Press Start for anagram puzzle ...");
 		
 		final Button button = (Button) findViewById(R.id.button1);
 		final Button button2 = (Button) findViewById(R.id.button2);
