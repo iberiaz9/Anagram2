@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\pre-dexed\debug\android-support-v4_ffd2b36a7c9d0a356c888e428e52a7c28df4df1e.jar" />
+    </item>
+
+</items>
