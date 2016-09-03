@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Iberia\Documents\GitHub\Anagram2\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="C:\Users\Iberia\Documents\GitHub\Anagram2\app\build\intermediates\pre-dexed\debug\android-support-v4_0f4f103bd0272ec72b42c52d55190f407837bd37.jar" />
+    </item>
+    <item
         jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
         jumboMode="false"
         revision="23.0.3"

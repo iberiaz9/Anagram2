@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public String readRawTextFile(int resId)
+	private String readRawTextFile(int resId)
 	{
 	    InputStream inputStream = this.getResources().openRawResource(resId);
 
