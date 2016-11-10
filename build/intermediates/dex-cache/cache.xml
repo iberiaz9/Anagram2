@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c5b0395c9d6e51d44da04d91e840636e12369786">
+        sha1="c2f316114fe79597769daf0df646eac5d8a33dd6">
         <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8c9a187dfeeebf42377c83fd031345b5d3909a87\classes.dex" />
     </item>
     <item
@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="12d71fa949d5c1bff8659d4d53b703021bb0024c">
+        sha1="123cf80f042a6515249c48288a6bfade272f6fa8">
         <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_809312ddb2931471bb87185f5a1b7a9bb640d442\classes.dex" />
     </item>
 

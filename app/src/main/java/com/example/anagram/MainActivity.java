@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 	Random random = new Random();
 	String [] lines;
 	int max;
-	AsyncTask<Void, Void, Integer> mAtask;
+	AsyncTask<Void, Void, Integer> mAtask = null;
 
     private class myAtask extends AsyncTask<Void, Void, Integer> {
         @Override
@@ -46,8 +46,9 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(Integer result) {
             Toast.makeText(getApplicationContext(), "Timeout!", Toast.LENGTH_LONG).show();
-            mTextView.setText("Sorry :-(");
+            mTextView.setText("Sorry, you took too long :-(");
             mEditText.setText(mPrevAns);
+            mAtask = null;
         }
     }
 	
@@ -79,6 +80,7 @@ public class MainActivity extends Activity {
 					mTextView.setText(wmax - 1 + " anagram(s) of " + mTheWord);
 					mEditText.setText("");
 					mPrevAns = lines[idx];
+                    if (mAtask != null) mAtask.cancel(true);
                     mAtask = new myAtask();
                     mAtask.execute();
 				} catch (Exception e) {
@@ -109,6 +111,7 @@ public class MainActivity extends Activity {
 
 					mEditText.setText(mPrevAns);
                     mAtask.cancel(true);
+                    mAtask = null;
 				} catch (Exception e) {
 					Log.e(TAG, e.toString());
 				}
