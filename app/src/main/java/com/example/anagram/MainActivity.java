@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Random;
+
+import android.os.AsyncTask;
 import android.view.View;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -14,6 +16,7 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 @SuppressLint("DefaultLocale")
 public class MainActivity extends Activity {
@@ -26,6 +29,27 @@ public class MainActivity extends Activity {
 	Random random = new Random();
 	String [] lines;
 	int max;
+	AsyncTask<Void, Void, Integer> mAtask;
+
+    private class myAtask extends AsyncTask<Void, Void, Integer> {
+        @Override
+        protected Integer doInBackground(Void... params) {
+            final int simulatedDelay = 15000;
+            try {
+                Thread.sleep(simulatedDelay);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return 0;
+        }
+
+        @Override
+        protected void onPostExecute(Integer result) {
+            Toast.makeText(getApplicationContext(), "Timeout!", Toast.LENGTH_LONG).show();
+            mTextView.setText("Sorry :-(");
+            mEditText.setText(mPrevAns);
+        }
+    }
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +79,8 @@ public class MainActivity extends Activity {
 					mTextView.setText(wmax - 1 + " anagram(s) of " + mTheWord);
 					mEditText.setText("");
 					mPrevAns = lines[idx];
+                    mAtask = new myAtask();
+                    mAtask.execute();
 				} catch (Exception e) {
 					Log.e(TAG, e.toString());
 				}
@@ -82,6 +108,7 @@ public class MainActivity extends Activity {
 						mTextView.setText("Sorry :-(");
 
 					mEditText.setText(mPrevAns);
+                    mAtask.cancel(true);
 				} catch (Exception e) {
 					Log.e(TAG, e.toString());
 				}

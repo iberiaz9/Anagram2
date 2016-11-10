@@ -2,18 +2,31 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Iberia\Documents\GitHub\Anagram2\app\libs\android-support-v4.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
         revision="23.0.3"
-        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
-        <dex dex="C:\Users\Iberia\Documents\GitHub\Anagram2\app\build\intermediates\pre-dexed\debug\android-support-v4_0f4f103bd0272ec72b42c52d55190f407837bd37.jar" />
+        sha1="c5b0395c9d6e51d44da04d91e840636e12369786">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8c9a187dfeeebf42377c83fd031345b5d3909a87\classes.dex" />
     </item>
     <item
+        is-multidex="true"
         jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
-        jumboMode="false"
+        jumboMode="true"
+        optimize="true"
         revision="23.0.3"
         sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
-        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\pre-dexed\debug\android-support-v4_ffd2b36a7c9d0a356c888e428e52a7c28df4df1e.jar" />
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_ffd2b36a7c9d0a356c888e428e52a7c28df4df1e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="12d71fa949d5c1bff8659d4d53b703021bb0024c">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_809312ddb2931471bb87185f5a1b7a9bb640d442\classes.dex" />
     </item>
 
 </items>
