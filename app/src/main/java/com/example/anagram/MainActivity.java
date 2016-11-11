@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 						mTextView.setText("Sorry :-(");
 
 					mEditText.setText(mPrevAns);
-                    mAtask.cancel(true);
+                    if (mAtask != null) mAtask.cancel(true);
                     mAtask = null;
 				} catch (Exception e) {
 					Log.e(TAG, e.toString());
