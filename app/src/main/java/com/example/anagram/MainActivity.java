@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
     Random random = new Random();
     String [] lines;
     int max;
+    String mTOval = null;
     AsyncTask<Integer, Void, Integer> mAtask = null;
 
     private class myAtask extends AsyncTask<Integer, Void, Integer> {
@@ -47,7 +48,10 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(Integer result) {
             Toast.makeText(getApplicationContext(), "Timeout!", Toast.LENGTH_LONG).show();
-            mTextView.setText("Sorry, you took too long :-(");
+            if (mTOval != null)
+                mTextView.setText("Your time of " + mTOval + " secs is up :-(");
+            else
+                mTextView.setText("Your time is up :-(");
             mEditText.setText(mPrevAns);
             mAtask = null;
         }
@@ -83,10 +87,10 @@ public class MainActivity extends Activity {
                     mPrevAns = lines[idx];
                     if (mAtask != null) mAtask.cancel(true);
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                    String toval = prefs.getString(getString(R.string.pref_location_key),
+                    mTOval = prefs.getString(getString(R.string.pref_location_key),
                             getString(R.string.pref_location_default));
-                    if (toval != null) {
-                        int val = new Integer(toval);
+                    if (mTOval != null) {
+                        int val = new Integer(mTOval);
                         if (val != 0) {
                             mAtask = new myAtask();
                             mAtask.execute(val);
