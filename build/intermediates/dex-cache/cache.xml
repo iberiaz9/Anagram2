@@ -12,10 +12,46 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
+        sha1="8550fae08b0204c3a5657f2b0ead7a888b6d30d7">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_809312ddb2931471bb87185f5a1b7a9bb640d442\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\jars\libs\internal_impl-21.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.2_a0188ce3977461721f5d8696c757aa2cfc898d1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.2_d060435f7974cf5ccedfa63aa275bfde91af03d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.2_d667ce4cc96f637336bc8312d91e2f43a1254dd5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
         sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
         <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_ffd2b36a7c9d0a356c888e428e52a7c28df4df1e\classes.dex" />
     </item>
@@ -24,9 +60,36 @@
         jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.3"
-        sha1="8e28f238ef6c17d6831e9a66752847c0dd990122">
+        revision="21.1.2"
+        sha1="08a5ac34876b25bc55458042f2d0c6189e45131a">
         <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_809312ddb2931471bb87185f5a1b7a9bb640d442\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.2_339b9fab946cbf5f818cc2451c1ed1f35b46af64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d20925180196e6068756f81c7dd7ac393bbbedd8">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8c9a187dfeeebf42377c83fd031345b5d3909a87\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\libs\android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="C:\Users\Iberia\AndroidStudioProjects\Anagram2\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_ffd2b36a7c9d0a356c888e428e52a7c28df4df1e\classes.dex" />
     </item>
 
 </items>

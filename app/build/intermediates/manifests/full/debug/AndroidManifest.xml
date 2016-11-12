@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +21,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.anagram.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.example.anagram.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.anagram.MainActivity" />
         </activity>
     </application>
 

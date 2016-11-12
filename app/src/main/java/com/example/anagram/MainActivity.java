@@ -6,11 +6,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Random;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
+import android.view.MenuItem;
 import android.view.View;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.Button;
@@ -18,7 +21,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-@SuppressLint("DefaultLocale")
 public class MainActivity extends Activity {
 
 	private static final String TAG = "MainActivity";
@@ -29,14 +31,13 @@ public class MainActivity extends Activity {
 	Random random = new Random();
 	String [] lines;
 	int max;
-	AsyncTask<Void, Void, Integer> mAtask = null;
+	AsyncTask<Integer, Void, Integer> mAtask = null;
 
-    private class myAtask extends AsyncTask<Void, Void, Integer> {
+    private class myAtask extends AsyncTask<Integer, Void, Integer> {
         @Override
-        protected Integer doInBackground(Void... params) {
-            final int simulatedDelay = 15000;
+        protected Integer doInBackground(Integer... params) {
             try {
-                Thread.sleep(simulatedDelay);
+                Thread.sleep(params[0] * 1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -81,8 +82,16 @@ public class MainActivity extends Activity {
 					mEditText.setText("");
 					mPrevAns = lines[idx];
                     if (mAtask != null) mAtask.cancel(true);
-                    mAtask = new myAtask();
-                    mAtask.execute();
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                    String toval = prefs.getString(getString(R.string.pref_location_key),
+                            getString(R.string.pref_location_default));
+                    if (toval != null) {
+                        int val = new Integer(toval);
+                        if (val != 0) {
+                            mAtask = new myAtask();
+                            mAtask.execute(val);
+                        }
+                    }
 				} catch (Exception e) {
 					Log.e(TAG, e.toString());
 				}
@@ -125,6 +134,22 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 	
 	private String readRawTextFile(int resId)
 	{
