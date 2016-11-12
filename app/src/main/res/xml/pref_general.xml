@@ -4,8 +4,10 @@
     android:layout_height="match_parent">
 
     <EditTextPreference
+        android:key="timeout"
         android:title="@string/pref_location_label"
-        android:key="@string/pref_location_key"
+        android:summary="Time allowed in seconds"
+        android:dialogTitle="Please enter timeout in seconds"
         android:defaultValue="@string/pref_location_default"
         android:inputType="text"
         android:singleLine="true" />
