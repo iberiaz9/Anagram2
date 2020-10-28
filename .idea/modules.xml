@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Anagram2.iml" filepath="$PROJECT_DIR$/Anagram2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Anagram2k.iml" filepath="$PROJECT_DIR$/Anagram2k.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.iml" />
     </modules>
   </component>
 </project>
