@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Anagram2k.iml" filepath="$PROJECT_DIR$/Anagram2k.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram2k.app.unitTest.iml" />
     </modules>
   </component>
 </project>
