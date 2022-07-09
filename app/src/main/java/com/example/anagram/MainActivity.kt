@@ -63,7 +63,7 @@ class MainActivity : Activity() {
         lines = line?.split("\n".toRegex())?.dropLastWhile({ it.isEmpty() })?.toTypedArray()
         max = lines!!.size
 
-        mTextView!!.text = "Anagram puzzle (!)"
+        mTextView!!.text = "Anagram puzzle"
 
         val button = findViewById<View>(R.id.button1) as Button
         val button2 = findViewById<View>(R.id.button2) as Button
